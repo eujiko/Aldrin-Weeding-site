@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/navbar";
+import Landing from "./components/landing";
+import OurStory from "./components/ourstory";
+import WeddingDetails from "./components/weddingdetails";
+import Memories from "./components/memories";
+import RSVP from "./components/calendar";
+import FAQ from "./components/faq";
+import Footer from "./components/footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Landing />
+        <RSVP />
+        <OurStory />
+        <WeddingDetails />
+        <Memories />
+        <FAQ />
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default App;
