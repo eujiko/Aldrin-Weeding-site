@@ -22,14 +22,13 @@ export default function WeddingDetails() {
         {/* Section 1: Ceremony */}
         <div className="text-center space-y-4">
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#8daabb]">
-            Wedding Ceremony
+            Wedding Location
           </h2>
-          <p className="text-lg sm:text-xl text-gray-700">
+          {/* <p className="text-lg sm:text-xl text-gray-700">
             March 8, 2026 | 3:30 PM
-          </p>
+          </p> */}
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Somewhere in Zamboanga del Norte you can find it if you're big
-            enough!
+            Located somewhere in Zamboanga del Norte, this place is accessible and easy to find.
           </p>
 
           {/* Google Maps iframe */}
@@ -51,9 +50,9 @@ export default function WeddingDetails() {
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#653720]">
             Wedding Reception
           </h2>
-          {/* <p className="text-lg sm:text-xl text-gray-700">
-            March 8, 2026 | 6:00 PM
-          </p> */}
+          <p className="text-lg sm:text-xl text-gray-700">
+            March 8, 2026 | 3:30 PM
+          </p>
 
           {/* Carousel Wrapper */}
           <div className="relative w-full overflow-hidden">
