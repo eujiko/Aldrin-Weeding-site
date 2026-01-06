@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import story2 from "../assets/images/story1.jpg";
+import story2 from "../assets/couple-photo/p19.jpg";
+import bgPhoto from "../assets/images/story-bg.jpg";
 
 export default function Calendar() {
   const weddingDate = useMemo(() => new Date("2026-03-08T00:00:00"), []);
@@ -47,7 +48,10 @@ export default function Calendar() {
   for (let d = 1; d <= daysInMonth; d++) days.push(d);
 
   return (
-    <div className="bg-[#B87C4C] min-h-screen flex items-center justify-center px-4 py-10">
+    <div
+      className="bg-[#B87C4C] min-h-screen flex items-center justify-center px-4 py-10"
+      style={{ backgroundImage: `url(${bgPhoto})` }}
+    >
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-start">
         {/* IMAGE */}
         <div className="flex justify-center w-full">
@@ -63,83 +67,92 @@ export default function Calendar() {
         </div>
 
         {/* CALENDAR + TIMER */}
-        <div className="max-w-md mx-auto w-full p-4 sm:p-6 md:p-8 text-center text-white">
-          <h2 className="text-xl font-semibold mb-4">
-            {new Date(year, month).toLocaleString("default", { month: "long" })}{" "}
-            {year}
-          </h2>
+        <div className="max-w-md mx-auto w-full">
+          <div
+            className="
+              relative z-10
+              bg-white/10 backdrop-blur-xl
+              rounded-3xl p-6 sm:p-8 md:p-10
+              border border-white/30
+              shadow-2xl
+              text-center text-[#a2481b]
+            "
+          >
+            <h2 className="text-xl font-semibold mb-4">
+              {new Date(year, month).toLocaleString("default", {
+                month: "long",
+              })}{" "}
+              {year}
+            </h2>
 
-          {/* Weekday headers */}
-          <div className="grid grid-cols-7 text-xs sm:text-sm text-white/80 mb-2">
-            {["S", "M", "T", "W", "T", "F", "S"].map((day) => (
-              <div key={day} className="text-center">
-                {day}
-              </div>
-            ))}
-          </div>
-
-          {/* Days */}
-          <div className="grid grid-cols-7 gap-[2px] sm:gap-1 text-center text-xs sm:text-sm">
-            {days.map((day, i) => (
-              <div
-                key={i}
-                className={`h-8 sm:h-9 md:h-10 flex items-center justify-center rounded
-                  ${
-                    day === 8
-                      ? "bg-[#8daabb] text-white font-bold"
-                      : "text-white"
-                  }
-                `}
-              >
-                {day || ""}
-              </div>
-            ))}
-          </div>
-
-          {/* TIMER */}
-          <div className="mt-6">
-            {status === "countdown" && timeLeft && (
-              <>
-                {/* Countdown heading */}
-                <p className="text-sm sm:text-base mb-4 tracking-widest text-white/90">
-                  We are getting married in
-                </p>
-
-                {/* Countdown boxes */}
-               <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 ">
-                  {Object.entries(timeLeft).map(([label, value]) => (
-                    <div
-                      key={label}
-                      className="
-                      flex flex-col items-center
-                      min-w-[60px] sm:min-w-[70px] md:min-w-[80px]
-                      bg-white/20 backdrop-blur-xl
-                      rounded-xl px-3 py-2
-                      border border-white/30
-                      shadow-lg">
-                      <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-md">
-                        {value}
-                      </div>
-                      <div className="uppercase text-xs sm:text-sm tracking-widest mt-1 text-white/80">
-                        {label}
-                      </div>
-                    </div>
-                  ))}
+            {/* Weekday headers */}
+            <div className="grid grid-cols-7 text-xs sm:text-sm text-[#a2481b] mb-2">
+              {["S", "M", "T", "W", "T", "F", "S"].map((day) => (
+                <div key={day} className="text-center">
+                  {day}
                 </div>
-              </>
-            )}
+              ))}
+            </div>
 
-            {status === "celebration" && (
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-widest text-pink-200">
-                Our Wedding Day is Here!
-              </h2>
-            )}
+            {/* Days */}
+            <div className="grid grid-cols-7 gap-[2px] sm:gap-1 text-center text-xs sm:text-sm">
+              {days.map((day, i) => (
+                <div
+                  key={i}
+                  className={`h-8 sm:h-9 md:h-10 flex items-center justify-center rounded
+            ${day === 8 ? "bg-[#8daabb] text-white font-bold" : "text-[#a2481b]"}
+          `}
+                >
+                  {day || ""}
+                </div>
+              ))}
+            </div>
 
-            {status === "thankyou" && (
-              <h2 className="text-xl sm:text-2xl font-semibold tracking-widest text-white/90">
-                Thank You for Celebrating With Us
-              </h2>
-            )}
+            {/* TIMER */}
+            <div className="mt-6">
+              {status === "countdown" && timeLeft && (
+                <>
+                  <p className="text-sm sm:text-base mb-4 tracking-widest text-[#a2481b]">
+                    We are getting married in
+                  </p>
+
+                  <div className="flex justify-center gap-2 sm:gap-3 md:gap-4">
+                    {Object.entries(timeLeft).map(([label, value]) => (
+                      <div
+                        key={label}
+                        className="
+                          flex flex-col items-center
+                          min-w-[60px] sm:min-w-[70px] md:min-w-[80px]
+                          bg-white/20 backdrop-blur-xl
+                          rounded-xl px-3 py-2
+                          border border-white/30
+                          shadow-lg
+                        "
+                      >
+                        <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#a2481b] drop-shadow-md">
+                          {value}
+                        </div>
+                        <div className="uppercase text-xs sm:text-sm tracking-widest mt-1 text-[#a2481b]">
+                          {label}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              {status === "celebration" && (
+                <h2 className="text-2xl sm:text-3xl font-semibold tracking-widest text-pink-200">
+                  Our Wedding Day is Here!
+                </h2>
+              )}
+
+              {status === "thankyou" && (
+                <h2 className="text-xl sm:text-2xl font-semibold tracking-widest text-white/90">
+                  Thank You for Celebrating With Us
+                </h2>
+              )}
+            </div>
           </div>
         </div>
       </div>
