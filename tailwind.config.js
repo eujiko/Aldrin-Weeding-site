@@ -6,6 +6,8 @@ module.exports = {
       fontFamily: {
         wedding: ['"Great Vibes"', "cursive"],
         weddingBody: ['"Allura"', "cursive"],
+        garamond: ['EB Garamond', 'serif'],
+
       },
       keyframes: {
         fadeInUp: {

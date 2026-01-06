@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import story2 from "../assets/couple-photo/p19.jpg";
+import story2 from "../assets/couple-photo/p21.jpg";
 import bgPhoto from "../assets/images/story-bg.jpg";
 
 export default function Calendar() {

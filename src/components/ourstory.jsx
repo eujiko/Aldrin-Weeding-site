@@ -1,9 +1,7 @@
 import { useEffect, useRef } from "react";
-import story1 from "../assets/couple-photo/p24.jpg";
+import story1 from "../assets/couple-photo/p12.jpeg";
 import story2 from "../assets/couple-photo/p13.jpg";
 import bgStory from "../assets/images/bg-s.jpg";
-// import decor1 from "../assets/images/decor-1.png";
-// import decor2 from "../assets/images/decor-2.png";
 
 // Hook for scroll-triggered animation
 function useScrollAnimation(animationClass) {
@@ -70,7 +68,7 @@ export default function OurStory() {
 
           {/* First Section */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16 md:mb-24">
-            <div className="md:w-1/2 pl-8 flex justify-center">
+            <div className="md:w-1/2 md:pl-8 flex justify-center">
               <img
                 ref={imgLeftRef}
                 src={story2}
@@ -82,16 +80,16 @@ export default function OurStory() {
               ref={textRightRef}
               className="opacity-0 md:w-1/2 text-center md:text-left space-y-6"
             >
-              <h3 className="text-2xl sm:text-3xl font-semibold text-[#8daabb] mb-4">
+              <h3 className="text-2xl sm:text-3xl font-wedding text-[#8daabb] mb-4">
                 How We Met
               </h3>
-              <p className="font-weddingBody text-[#8daabb] text-lg sm:text-xl leading-relaxed">
+              <p className="font-garamond font-light text-[#8daabb] text-base sm:text-lg leading-relaxed">
                 Aldrin and Jessa’s love story began on a beautiful, 
                 starry night during a spontaneous blessing at the home of a close family friend. 
                 In that moment, the planets, fate, and stars seemed to align—bringing them to the same place, 
                 at the same time, for a reason neither could yet imagine.
               </p>
-              <p className="font-weddingBody text-[#8daabb] text-lg sm:text-xl leading-relaxed">
+              <p className="font-garamond font-light text-[#8daabb] text-base sm:text-lg leading-relaxed">
                 What started as a simple conversation about life and careers quickly grew into something deeper.
                 With every shared laugh, late-night talk, and meaningful moment,
                 their connection blossomed into an undeniable connection.
@@ -113,10 +111,10 @@ export default function OurStory() {
               ref={textLeftRef}
               className="opacity-0 md:w-1/2 text-center md:text-left"
             >
-              <h3 className="text-2xl sm:text-3xl font-semibold text-[#8daabb] mb-4">
+              <h3 className="text-2xl sm:text-3xl font-wedding text-[#8daabb] mb-4">
                 Our Journey
               </h3>
-              <p className="font-weddingBody text-[#8daabb] text-lg sm:text-xl leading-relaxed">
+              <p className="font-garamond font-light text-[#8daabb] text-base sm:text-lg leading-relaxed">
                On August 24, 2025, surrounded by the love and presence of their families, 
                Aldrin asked Jessa a question that would change their lives forever. With joyful hearts,
                they celebrated a moment that marked the beginning of their forever. 
