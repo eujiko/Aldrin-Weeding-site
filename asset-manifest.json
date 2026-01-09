@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Aldrin-Weeding-site/static/css/main.03b159dc.css",
-    "main.js": "/Aldrin-Weeding-site/static/js/main.7431a153.js",
+    "main.css": "/Aldrin-Weeding-site/static/css/main.3d522fc9.css",
+    "main.js": "/Aldrin-Weeding-site/static/js/main.8bdc4c3b.js",
     "static/media/venue.jpg": "/Aldrin-Weeding-site/static/media/venue.9aab2f3c738d624ba1e5.jpg",
     "static/media/p24.jpg": "/Aldrin-Weeding-site/static/media/p24.657a25065616239d3d07.jpg",
     "static/media/p23.jpg": "/Aldrin-Weeding-site/static/media/p23.33b9a074e28dd438e6ca.jpg",
@@ -28,11 +28,11 @@
     "static/media/dress-code.png": "/Aldrin-Weeding-site/static/media/dress-code.12874eb6f78659d16961.png",
     "static/media/p20.jpeg": "/Aldrin-Weeding-site/static/media/p20.267fcc1e6d07605cc081.jpeg",
     "index.html": "/Aldrin-Weeding-site/index.html",
-    "main.03b159dc.css.map": "/Aldrin-Weeding-site/static/css/main.03b159dc.css.map",
-    "main.7431a153.js.map": "/Aldrin-Weeding-site/static/js/main.7431a153.js.map"
+    "main.3d522fc9.css.map": "/Aldrin-Weeding-site/static/css/main.3d522fc9.css.map",
+    "main.8bdc4c3b.js.map": "/Aldrin-Weeding-site/static/js/main.8bdc4c3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.03b159dc.css",
-    "static/js/main.7431a153.js"
+    "static/css/main.3d522fc9.css",
+    "static/js/main.8bdc4c3b.js"
   ]
 }
