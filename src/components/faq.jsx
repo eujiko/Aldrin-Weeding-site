@@ -3,7 +3,7 @@ import { useState } from "react";
 const faqData = [
   {
     question: "What is the date and time of the wedding?",
-    answer: "Our wedding will take place on March 8, 2026, starting at 4:00 PM.",
+    answer: "Our wedding will take place on March 8, 2026, starting at 3:30 PM.",
   },
   {
     question: "Where is the wedding venue?",
@@ -19,7 +19,7 @@ const faqData = [
   },
   {
     question: "Can I bring a plus one?",
-    answer: "Please refer to your invitation; some guests may have a plus one while others are individual invites.",
+    answer: "While we would be delighted to invite everyone, in order to ensure a comfortable experience for all our guests, we will be limiting our invitations to those specifically listed. Thank you for your understanding.",
   },
   {
     question: "Will there be accommodations nearby?",

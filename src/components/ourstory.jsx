@@ -65,14 +65,15 @@ export default function OurStory() {
               <h3 className="text-xl sm:text-2xl md:text-3xl font-wedding text-[#8daabb] mb-2 sm:mb-4">
                 How We Met
               </h3>
-              <p className="font-garamond font-light text-[#8daabb] text-sm sm:text-base md:text-lg leading-relaxed">
-                Aldrin and Jessa’s love story began on a beautiful, starry night
-                during a spontaneous blessing at the home of a close family
-                friend.
+              <p className="font-garamond font-light text-[#103659] text-sm sm:text-base md:text-lg leading-relaxed">
+               Aldrin and Jessa’s love story began on a beautiful, 
+               starry night during a spontaneous blessing at the home of a close family friend. 
+               In that moment, the planets, fate, and stars seemed to align—bringing them to the same place,
+               at the same time, for a reason neither could yet imagine.
               </p>
-              <p className="font-garamond font-light text-[#8daabb] text-sm sm:text-base md:text-lg leading-relaxed">
-                What started as a simple conversation quickly grew into
-                something deeper.
+              <p className="font-garamond font-light text-[#103659] text-sm sm:text-base md:text-lg leading-relaxed">
+                What started as a simple conversation about life and careers quickly grew into something deeper.
+                With every shared laugh, late-night talk, and meaningful moment, their connection blossomed into an undeniable connection.
               </p>
             </div>
           </div>
@@ -95,10 +96,10 @@ export default function OurStory() {
               <h3 className="text-xl sm:text-2xl md:text-3xl font-wedding text-[#8daabb] mb-2 sm:mb-4">
                 Our Journey
               </h3>
-              <p className="font-garamond font-light text-[#8daabb] text-sm sm:text-base md:text-lg leading-relaxed">
-                On August 24, 2025, surrounded by the love and presence of their
-                families, Aldrin asked Jessa a question that would change their
-                lives forever.
+              <p className="font-garamond font-light text-[#103659] text-sm sm:text-base md:text-lg leading-relaxed">
+                On August 24, 2025, surrounded by the love and presence of their families, 
+                Aldrin asked Jessa a question that would change their lives forever. With joyful hearts, 
+                they celebrated a moment that marked the beginning of their forever. 
               </p>
             </div>
           </div>
