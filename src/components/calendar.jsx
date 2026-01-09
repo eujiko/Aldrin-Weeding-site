@@ -52,7 +52,7 @@ export default function Calendar() {
 
   return (
     <div
-      className="bg-[#B87C4C] min-h-screen flex items-center justify-center px-4 py-10"
+      className="min-h-screen flex items-center justify-center px-4 py-10"
       style={{ backgroundImage: `url(${bgPhoto})` }}
     >
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-start">
