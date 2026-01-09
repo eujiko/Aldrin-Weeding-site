@@ -47,6 +47,9 @@ export default function Calendar() {
   for (let i = 0; i < firstDay; i++) days.push(null);
   for (let d = 1; d <= daysInMonth; d++) days.push(d);
 
+  // Modal state for photo
+  const [openPhoto, setOpenPhoto] = useState(false);
+
   return (
     <div
       className="bg-[#B87C4C] min-h-screen flex items-center justify-center px-4 py-10"
@@ -58,10 +61,13 @@ export default function Calendar() {
           <img
             src={story2}
             alt="Our Beginning"
+            onClick={() => setOpenPhoto(true)}
             className="
+              cursor-pointer
               w-[220px] sm:w-[260px] md:w-[300px] lg:w-[340px] xl:w-[380px]
               h-[300px] sm:h-[340px] md:h-[380px] lg:h-[420px] xl:h-[460px]
               object-cover rounded-2xl shadow-lg
+              transition-transform duration-300 hover:scale-105
             "
           />
         </div>
@@ -100,8 +106,8 @@ export default function Calendar() {
                 <div
                   key={i}
                   className={`h-8 sm:h-9 md:h-10 flex items-center justify-center rounded
-            ${day === 8 ? "bg-[#8daabb] text-white font-bold" : "text-[#a2481b]"}
-          `}
+                    ${day === 8 ? "bg-[#8daabb] text-white font-bold" : "text-[#a2481b]"}
+                  `}
                 >
                   {day || ""}
                 </div>
@@ -156,6 +162,37 @@ export default function Calendar() {
           </div>
         </div>
       </div>
+
+      {/* Modal for photo */}
+      {openPhoto && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+          <button
+            onClick={() => setOpenPhoto(false)}
+            className="
+              fixed top-4 right-4
+              flex items-center justify-center
+              w-10 h-10
+              rounded-full
+              bg-white/20 backdrop-blur-md
+              text-white text-xl font-bold
+              shadow-lg
+              transition duration-300
+              hover:bg-white/30 hover:scale-110
+              focus:outline-none focus:ring-2 focus:ring-white/50
+            "
+            aria-label="Close"
+          >
+            ✕
+          </button>
+          <div className="relative max-w-3xl w-full px-4">
+            <img
+              src={story2}
+              alt="Expanded view"
+              className="w-full h-auto rounded-xl shadow-2xl object-contain max-h-[90vh]"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
